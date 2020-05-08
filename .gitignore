@@ -1,0 +1,12 @@
+._*
+.DS_Store
+.DS_Store?
+.idea
+.Spotlight-V100
+.Trashes
+node_modules
+yarn.lock
+build
+
+dist/
+docs/
