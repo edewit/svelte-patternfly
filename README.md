@@ -28,7 +28,7 @@ Either in your HTML layout:
 
 Or add from your Svelte app:
 
-```
+```html
 <svelte:head>
   <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly@2/patternfly.css">
 </svelte:head>
