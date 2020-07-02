@@ -9,6 +9,7 @@ import Card from './card/Card.svelte'
 import CardTitle from './card/CardTitle.svelte'
 import CardBody from './card/CardBody.svelte'
 import CardFooter from './card/CardFooter.svelte'
+import Checkbox from './Checkbox.svelte'
 
 export {
   Alert,
@@ -21,5 +22,6 @@ export {
   Card,
   CardTitle,
   CardBody,
-  CardFooter
+  CardFooter,
+  Checkbox
 }

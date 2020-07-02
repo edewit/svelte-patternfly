@@ -6,6 +6,7 @@ import Badge from './badge/Index.svelte';
 import Breadcrumbs from './breadcrumb/Index.svelte';
 import Button from './button/Index.svelte';
 import Card from './card/Index.svelte';
+import Checkbox from './check/Index.svelte';
 
 const story = Component => () => ({
   Component
@@ -20,4 +21,5 @@ const story = Component => () => ({
   .add('Badge', story(Badge))
   .add('Breadcrumb', story(Breadcrumbs))
   .add('Button', story(Button))
-  .add('Card', story(Card));
+  .add('Card', story(Card))
+  .add('Checkbox', story(Checkbox));
