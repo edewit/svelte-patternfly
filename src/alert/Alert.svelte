@@ -1,6 +1,6 @@
 <script>
   import clsx from 'clsx';
-  import { clean, capitalize } from './utils';
+  import { clean, capitalize } from '../utils';
 
   let className = 'pf-c-alert';
   export { className as class };
@@ -22,17 +22,17 @@
 </script>
 
 <div class={classes} aria-label={title} {...props}>
-    <div class="pf-c-alert__icon">
-        {@html types[variant]}
-    </div>
-    <h4 class="pf-c-alert__title">
-      <span class="pf-screen-reader">{capitalize(variant)} alert:</span>
-      {title}
-    </h4>
-    <div class="pf-c-alert__description">
-      <slot/>
-    </div>
-    <div class="pf-c-alert__action">
-        <slot name="action"></slot>
-    </div>
+  <div class="pf-c-alert__icon">
+    {@html types[variant]}
+  </div>
+  <h4 class="pf-c-alert__title">
+    <span class="pf-screen-reader">{capitalize(variant)} alert:</span>
+    {title}
+  </h4>
+  <div class="pf-c-alert__description">
+    <slot/>
+  </div>
+  <div class="pf-c-alert__action">
+    <slot name="action"></slot>
+  </div>
 </div>

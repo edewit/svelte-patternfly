@@ -5,6 +5,8 @@
   import Groups from './Groups.svelte';
   import Outline from './Outline.svelte';
   import Sizes from './Sizes.svelte';
+  import Block from './Block.svelte';
+  import blockSource from '!!raw-loader!./Block.svelte'
   import disabledSource from '!!raw-loader!./Disabled.svelte';
   import groupsSource from '!!raw-loader!./Groups.svelte';
   import outlineSource from '!!raw-loader!./Outline.svelte';
@@ -21,12 +23,16 @@
   <Colors />
 </Example>
 
-<!-- <Example title="Outline" source={outlineSource}>
-  <Outline />
+<Example title="Block" source={blockSource}>
+  <Block />
 </Example>
 
 <Example title="Disabled" source={disabledSource}>
   <Disabled />
+</Example>
+
+<!-- <Example title="Outline" source={outlineSource}>
+  <Outline />
 </Example>
 
 <Example title="Sizes" source={sizesSource}>
