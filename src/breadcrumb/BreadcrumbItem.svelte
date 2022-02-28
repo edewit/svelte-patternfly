@@ -19,7 +19,7 @@
     <a
       href={to}
       target={target}
-      className={clsx('pf-c-breadcrumb__link', isActive && 'pf-m-current')}
+      class={clsx('pf-c-breadcrumb__link', isActive && 'pf-m-current')}
       aria-current={isActive ? 'page' : undefined}
     >
       {#if children}

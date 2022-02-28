@@ -24,7 +24,7 @@
     on:change
     type="checkbox"
     checked={isChecked}
-    class={clsx('pf-c-check__label', className)}
+    class={clsx('pf-c-check__input', className)}
   />
   {#if label}
   <label class={clsx('pf-c-check__label', isDisabled && 'pf-m-disabled')} for={props.id}>

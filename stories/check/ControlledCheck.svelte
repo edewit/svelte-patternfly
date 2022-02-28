@@ -14,9 +14,17 @@
       checks.check2 = checks.check1;
       checks.check3 = checks.check1;
     }
-    checks.check1 = (checks.check2 && checks.check3) || (checks.check2 || checks.check3 ? null : false);
+    checks.check1 =
+      (checks.check2 && checks.check3) ||
+      (checks.check2 || checks.check3 ? null : false);
   }
 </script>
+
+<style>
+  :global(.nested) {
+    padding-left: var(--pf-global--spacer--md);
+  }
+</style>
 
 <Checkbox
   label="Parent CheckBox"
