@@ -8,7 +8,6 @@
   export let title = '';
   export let isInline = false;
 
-  const props = clean($$props);
 
   $: classes = clsx(className, isInline && 'pf-m-inline', variant !== 'default' && 'pf-m-' + variant);
 
@@ -21,7 +20,7 @@
   }
 </script>
 
-<div class={classes} aria-label={title} {...props}>
+<div class={classes} aria-label={title} {...$$restProps}>
   <div class="pf-c-alert__icon">
     {@html types[variant]}
   </div>

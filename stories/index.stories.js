@@ -1,5 +1,3 @@
-import { storiesOf } from '@storybook/svelte';
-
 import Alert from './alert/Index.svelte';
 import Avatar from './avatar/Index.svelte';
 import Badge from './badge/Index.svelte';
@@ -9,19 +7,55 @@ import Card from './card/Index.svelte';
 import Checkbox from './check/Index.svelte';
 import Chip from './chip/Index.svelte';
 
-const story = Component => () => ({
-  Component
-});
+export default {
+  title: 'Components',
+  tags: ['autodocs'],
+};
 
-// storiesOf('Introduction', module)
-//   .add('Get Started', story(Welcome))
-  
-  storiesOf('Components', module)
-  .add('Alert', story(Alert))
-  .add('Avatar', story(Avatar))
-  .add('Badge', story(Badge))
-  .add('Breadcrumb', story(Breadcrumbs))
-  .add('Button', story(Button))
-  .add('Card', story(Card))
-  .add('Checkbox', story(Checkbox))
-  .add('Chip', story(Chip));
+export const AlertStory = {
+  render: () => ({
+    Component: Alert,
+  }),
+};
+
+export const AvatarStory = {
+  render: () => ({
+    Component: Avatar,
+  }),
+};
+
+export const BadgeStory = {
+  render: () => ({
+    Component: Badge,
+  }),
+};
+
+export const BreadcrumbStory = {
+  render: () => ({
+    Component: Breadcrumbs,
+  }),
+};
+
+export const ButtonStory = {
+  render: () => ({
+    Component: Button,
+  }),
+};
+
+export const CardStory = {
+  render: () => ({
+    Component: Card,
+  }),
+};
+
+export const CheckboxStory = {
+  render: () => ({
+    Component: Checkbox,
+  }),
+};
+
+export const ChipStory = {
+  render: () => ({
+    Component: Chip,
+  }),
+};

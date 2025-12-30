@@ -7,8 +7,7 @@
   export let alt = 'Avatar image';
   export let src = '';
 
-  const props = clean($$props);
   $: classes = clsx(className, 'pf-c-avatar' );
 </script>
 
-<img class={classes} {src} {alt} />
+<img class={classes} {src} {alt} {...$$restProps} />

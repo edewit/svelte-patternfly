@@ -1,10 +1,10 @@
 <script>
   import Example from '../Example.svelte';
   import SimpleCard from './SimpleCard.svelte';
-  import simpleCardSource from '!!raw-loader!./SimpleCard.svelte';
+  import simpleCardSource from './SimpleCard.svelte?raw';
 
   import SelectableCard from './SelectableCard.svelte';
-  import selectableCardSource from '!!raw-loader!./SelectableCard.svelte';
+  import selectableCardSource from './SelectableCard.svelte?raw';
 
 </script>
 

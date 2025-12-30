@@ -2,8 +2,8 @@
   import Example from '../Example.svelte';
   import Badge from './Badge.svelte';
   import BadgeUnRead from './BadgeUnRead.svelte';
-  import badgeSource from '!!raw-loader!./Badge.svelte';
-  import badgeUnReadSource from '!!raw-loader!./BadgeUnRead.svelte';
+  import badgeSource from './Badge.svelte?raw';
+  import badgeUnReadSource from './BadgeUnRead.svelte?raw';
 </script>
 
 <h1>Badges</h1>

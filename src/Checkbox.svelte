@@ -8,10 +8,9 @@
   export let isChecked = false;
   export let label = undefined;
   export let description = ''
+  export let id = undefined;
 
   let indeterminate = false;
-
-  const props = clean($$props);
 
   $: indeterminate = isChecked === null;
 </script>
@@ -20,14 +19,14 @@
   <input
     disabled={isDisabled}
     bind:indeterminate
-    {...props}
+    {...$$restProps}
     on:change
     type="checkbox"
     checked={isChecked}
     class={clsx('pf-c-check__input', className)}
   />
   {#if label}
-  <label class={clsx('pf-c-check__label', isDisabled && 'pf-m-disabled')} for={props.id}>
+  <label class={clsx('pf-c-check__label', isDisabled && 'pf-m-disabled')} for={id}>
     {label}
   </label>
   {/if}

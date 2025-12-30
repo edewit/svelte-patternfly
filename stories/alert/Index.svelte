@@ -1,9 +1,9 @@
 <script>
   import Example from '../Example.svelte';
   import Colors from './Colors.svelte';
-  import colorsSource from '!!raw-loader!./Colors.svelte';
+  import colorsSource from './Colors.svelte?raw';
   import Dismissable from './Dismissable.svelte';
-  import dismissableSource from '!!raw-loader!./Dismissable.svelte';
+  import dismissableSource from './Dismissable.svelte?raw';
 </script>
 
 <h1>Alerts</h1>

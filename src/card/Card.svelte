@@ -1,8 +1,6 @@
 <script>
   import clsx from 'clsx';
   import { clean } from '../utils';
-  const props = clean($$props);
-
   let className = '';
   export { className as class };
   export let isCompact = false;
@@ -20,6 +18,6 @@
   );
 </script>
 
-<div class={classes} {...props} on:click>
+<div class={classes} {...$$restProps} on:click>
   <slot />
 </div>

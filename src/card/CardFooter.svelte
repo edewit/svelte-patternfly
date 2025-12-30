@@ -4,11 +4,9 @@
 
   let className = '';
   export { className as class };
-  const props = clean($$props);
-
   $: classes = clsx(className, 'pf-c-card__footer');
 </script>
 
-<div {...props} class={classes}>
+<div {...$$restProps} class={classes}>
   <slot />
 </div>

@@ -6,6 +6,6 @@
   class="pf-c-button pf-m-plain"
   type="button"
   on:click
-  {...$$props}>
+  {...$$restProps}>
     <TimesIcon/>
 </button>

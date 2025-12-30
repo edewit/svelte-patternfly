@@ -6,12 +6,12 @@
   import Outline from './Outline.svelte';
   import Sizes from './Sizes.svelte';
   import Block from './Block.svelte';
-  import blockSource from '!!raw-loader!./Block.svelte'
-  import disabledSource from '!!raw-loader!./Disabled.svelte';
-  import groupsSource from '!!raw-loader!./Groups.svelte';
-  import outlineSource from '!!raw-loader!./Outline.svelte';
-  import sizesSource from '!!raw-loader!./Sizes.svelte';
-  import source from '!!raw-loader!./Colors.svelte';
+  import blockSource from './Block.svelte?raw'
+  import disabledSource from './Disabled.svelte?raw';
+  import groupsSource from './Groups.svelte?raw';
+  import outlineSource from './Outline.svelte?raw';
+  import sizesSource from './Sizes.svelte?raw';
+  import source from './Colors.svelte?raw';
 </script>
 
 <h1>Buttons</h1>

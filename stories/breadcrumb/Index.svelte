@@ -1,7 +1,7 @@
 <script>
   import Example from '../Example.svelte';
   import Sample from './Sample.svelte';
-  import source from '!!raw-loader!./Sample.svelte';
+  import source from './Sample.svelte?raw';
 </script>
 
 <h1>Breadcrumbs</h1>

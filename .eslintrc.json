@@ -1,19 +1,28 @@
 {
   "env": {
     "browser": true,
-    "es6": true,
+    "es2021": true,
     "jest/globals": true
   },
-  "extends": ["eslint:recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:svelte/recommended",
+    "plugin:storybook/recommended"
+  ],
   "parserOptions": {
-    "ecmaVersion": 2019,
+    "ecmaVersion": 2021,
     "sourceType": "module"
   },
-  "plugins": ["jest", "svelte3"],
+  "plugins": [
+    "jest",
+    "svelte"
+  ],
   "overrides": [
     {
-      "files": ["**/*.svelte"],
-      "processor": "svelte3/svelte3"
+      "files": [
+        "**/*.svelte"
+      ],
+      "parser": "svelte-eslint-parser"
     }
   ]
 }

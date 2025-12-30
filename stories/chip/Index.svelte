@@ -1,7 +1,7 @@
 <script>
   import Example from '../Example.svelte';
   import SingleChip from './SingleChip.svelte';
-  import singleChipSource from '!!raw-loader!./SingleChip.svelte';
+  import singleChipSource from './SingleChip.svelte?raw';
 </script>
 
 <h1>Chip</h1>

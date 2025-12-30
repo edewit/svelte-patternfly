@@ -19,12 +19,8 @@
   export let isBlock = false;
   export let isInline = false;
   export let isDisabled = false;
-  export let children = undefined;
   export let variant = variants.primary;
-
-  const props = clean($$props);
-
-  $: ariaLabel = $$props['aria-label'];
+  export let ariaLabel = undefined;
 
   $: classes = clsx(
     className,
@@ -40,15 +36,11 @@
 </script>
 
 <button
-  {...props}
+  {...$$restProps}
   class={classes}
   disabled={isDisabled}
   aria-disabled={isAriaDisabled}
   on:click
   aria-label={ariaLabel}>
-    {#if children}
-      {children}
-    {:else}
-      <slot />
-    {/if}
+  <slot />
 </button>

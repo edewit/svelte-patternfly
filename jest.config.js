@@ -1,6 +1,6 @@
 module.exports = {
   setupFilesAfterEnv: [
-    '@testing-library/svelte/cleanup-after-each',
+    '@testing-library/jest-dom',
   ],
   transform: {
     '^.+\\.js$': 'babel-jest',
@@ -8,5 +8,6 @@ module.exports = {
   },
   moduleFileExtensions: ['js', 'svelte'],
   bail: false,
-  verbose: false
+  verbose: false,
+  testEnvironment: 'jsdom',
 };

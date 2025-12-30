@@ -1,7 +1,7 @@
 <script>
   import Example from '../Example.svelte';
   import Avatar from './Avatar.svelte';
-  import avatarSource from '!!raw-loader!./Avatar.svelte';
+  import avatarSource from './Avatar.svelte?raw';
 </script>
 
 <h1>Avatar</h1>

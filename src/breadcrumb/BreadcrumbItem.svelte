@@ -7,14 +7,11 @@
   export let to = null;
   export let target = null;
   export let isActive = false;
-  export let children = undefined;
-
-  const props = clean($$props);
 
   $: classes = clsx(className, isActive && 'pf-m-current', 'pf-c-breadcrumb__item');
 </script>
 
-<li {...props} class={classes} aria-current={isActive ? 'page' : undefined}>
+<li {...$$restProps} class={classes} aria-current={isActive ? 'page' : undefined}>
   {#if to}
     <a
       href={to}
@@ -22,18 +19,10 @@
       class={clsx('pf-c-breadcrumb__link', isActive && 'pf-m-current')}
       aria-current={isActive ? 'page' : undefined}
     >
-      {#if children}
-        {children}
-      {:else}
-        <slot />
-      {/if}
+      <slot />
     </a>
   {:else}
-    {#if children}
-      {children}
-    {:else}
-      <slot />
-    {/if}
+    <slot />
   {/if}
   {#if !isActive}
     <span class="pf-c-breadcrumb__item-divider">

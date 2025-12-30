@@ -1,9 +1,9 @@
 <script>
   import Example from '../Example.svelte';
   import SimpleCheck from './SimpleCheck.svelte';
-  import simpleCheckSource from '!!raw-loader!./SimpleCheck.svelte';
+  import simpleCheckSource from './SimpleCheck.svelte?raw';
   import ControlledCheck from './ControlledCheck.svelte';
-  import controlledCheckSource from '!!raw-loader!./ControlledCheck.svelte';
+  import controlledCheckSource from './ControlledCheck.svelte?raw';
 </script>
 
 <h1>Check</h1>

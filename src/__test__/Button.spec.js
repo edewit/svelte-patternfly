@@ -1,12 +1,10 @@
 import Button from '../Button.svelte';
-import { render, cleanup } from '@testing-library/svelte';
+import { render } from '@testing-library/svelte';
 
 const renderButton = (props) => {
   const { container } = render(Button, { props });
   return container;
 };
-
-beforeEach(cleanup);
 
 describe('Button', () => {
   test('should render text and default color', () => {
