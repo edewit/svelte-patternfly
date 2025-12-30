@@ -213,6 +213,8 @@ export { default as PanelMainBody } from './components/Panel/PanelMainBody.svelt
 export { default as PanelHeader } from './components/Panel/PanelHeader.svelte';
 export { default as PanelFooter } from './components/Panel/PanelFooter.svelte';
 export * from './components/Panel/types';
+export { default as Progress } from './components/Progress/Progress.svelte';
+export * from './components/Progress/types';
 export { default as Modal } from './components/Modal/Modal.svelte';
 export { default as ModalHeader } from './components/Modal/ModalHeader.svelte';
 export { default as ModalBody } from './components/Modal/ModalBody.svelte';
