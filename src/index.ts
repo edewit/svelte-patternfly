@@ -255,3 +255,7 @@ export * from './components/Toolbar/types';
 export { default as SearchInput } from './components/SearchInput/SearchInput.svelte';
 export * from './components/SearchInput/types';
 export { default as SearchIcon } from './components/Icon/icons/SearchIcon.svelte';
+export { default as Sidebar } from './components/Sidebar/Sidebar.svelte';
+export { default as SidebarPanel } from './components/Sidebar/SidebarPanel.svelte';
+export { default as SidebarContent } from './components/Sidebar/SidebarContent.svelte';
+export * from './components/Sidebar/types';
