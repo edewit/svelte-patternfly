@@ -252,3 +252,6 @@ export { default as Toolbar } from './components/Toolbar/Toolbar.svelte';
 export { default as ToolbarContent } from './components/Toolbar/ToolbarContent.svelte';
 export { default as ToolbarItem } from './components/Toolbar/ToolbarItem.svelte';
 export * from './components/Toolbar/types';
+export { default as SearchInput } from './components/SearchInput/SearchInput.svelte';
+export * from './components/SearchInput/types';
+export { default as SearchIcon } from './components/Icon/icons/SearchIcon.svelte';
