@@ -207,6 +207,12 @@ export { default as OptionsMenu } from './components/OptionsMenu/OptionsMenu.sve
 export * from './components/OptionsMenu/types';
 export { default as Pagination } from './components/Pagination/Pagination.svelte';
 export * from './components/Pagination/types';
+export { default as Panel } from './components/Panel/Panel.svelte';
+export { default as PanelMain } from './components/Panel/PanelMain.svelte';
+export { default as PanelMainBody } from './components/Panel/PanelMainBody.svelte';
+export { default as PanelHeader } from './components/Panel/PanelHeader.svelte';
+export { default as PanelFooter } from './components/Panel/PanelFooter.svelte';
+export * from './components/Panel/types';
 export { default as Modal } from './components/Modal/Modal.svelte';
 export { default as ModalHeader } from './components/Modal/ModalHeader.svelte';
 export { default as ModalBody } from './components/Modal/ModalBody.svelte';
