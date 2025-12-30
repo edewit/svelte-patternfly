@@ -1,0 +1,28 @@
+# Source files
+src
+.storybook
+*.config.*
+*.test.*
+*.stories.*
+
+# Development files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Build artifacts
+.svelte-kit
+coverage
+storybook-static
+
+# Config files
+.gitignore
+.prettierrc
+.eslintrc.cjs
+tsconfig.json
+vitest.config.ts
+
+# Documentation
+README.md
+

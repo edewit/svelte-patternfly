@@ -1,58 +1,131 @@
-## Patternfly 4 components for Svelte v3
+# PatternFly Svelte
 
-**Work in progress, check back soon - PRs are welcome!**
+A Svelte component library implementing PatternFly design system components.
 
-The component names and interface are inspired by the [patternfly-react](https://github.com/patternfly/patternfly-react) library for React.
+## Installation
 
-### Status WIP
-
-Just started this, a lot of components are still missing
-
-----
-
-## Install ( when it's released 😉 )
-
-`npm install --save svelte svelte-patternfly`
+```bash
+npm install @patternfly/svelte @patternfly/patternfly
+```
 
 ## Usage
 
-_You need to include a link to patternfly stylesheet in your page - these components do not include or embed any patternfly styles automatically._
-
-Either in your HTML layout:
-
-```html
-<head>
-  <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly@2/patternfly.css">
-</head>
-```
-
-Or add from your Svelte app:
-
-```html
-<svelte:head>
-  <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly@2/patternfly.css">
-</svelte:head>
-```
-
-In your svelte component:
-
-```html
+```svelte
 <script>
-  import { Button } from 'svelte-patternfly';
+  import { Button } from '@patternfly/svelte';
+  import '@patternfly/svelte/styles.css';
 </script>
 
-<Button variant="primary">Hello World!</Button>
+<Button variant="primary">Click me</Button>
 ```
 
-### Note on server-side rendering (SSR) Usage:
+## Components
 
-If you are using svelte-patternfly in an SSR environment like Sapper, 
-it's recommended you import the component source directly, for example:
+### Button
 
-```html
-<script>
-  import Button from 'svelte-patternfly/src/Button.svelte';
-</script>
+The Button component supports all PatternFly button variants and features.
 
-<Button variant="primary">Hello World!</Button>
+#### Variants
+
+- `primary` - Primary button (default)
+- `secondary` - Secondary button
+- `tertiary` - Tertiary button
+- `danger` - Danger button
+- `warning` - Warning button
+- `link` - Link button
+- `plain` - Plain button
+- `control` - Control button
+- `stateful` - Stateful button
+
+#### Props
+
+| Prop             | Type                                | Default     | Description                                     |
+| ---------------- | ----------------------------------- | ----------- | ----------------------------------------------- |
+| `variant`        | `ButtonVariant`                     | `'primary'` | Button variant style                            |
+| `size`           | `'sm' \| 'md' \| 'lg'`              | `'md'`      | Button size                                     |
+| `isDisabled`     | `boolean`                           | `false`     | Whether the button is disabled                  |
+| `isDanger`       | `boolean`                           | `false`     | Whether the button has danger styling           |
+| `isBlock`        | `boolean`                           | `false`     | Whether the button spans full width             |
+| `isInline`       | `boolean`                           | `false`     | Whether the button is inline (for link variant) |
+| `isAriaDisabled` | `boolean`                           | `false`     | Whether the button is aria-disabled (for links) |
+| `component`      | `'button' \| 'a' \| 'span'`         | `'button'`  | HTML element to render                          |
+| `href`           | `string`                            | -           | URL for link buttons                            |
+| `type`           | `'button' \| 'submit' \| 'reset'`   | `'button'`  | Button type (for button elements)               |
+| `inProgress`     | `boolean`                           | `false`     | Whether to show progress indicator              |
+| `statefulState`  | `'read' \| 'unread' \| 'attention'` | -           | State for stateful variant                      |
+| `count`          | `number`                            | -           | Count badge to display                          |
+
+#### Examples
+
+```svelte
+<!-- Primary button -->
+<Button variant="primary">Primary</Button>
+
+<!-- Secondary button -->
+<Button variant="secondary">Secondary</Button>
+
+<!-- Small button -->
+<Button size="sm">Small</Button>
+
+<!-- Disabled button -->
+<Button isDisabled>Disabled</Button>
+
+<!-- Link button -->
+<Button variant="link" component="a" href="https://example.com">Link</Button>
+
+<!-- Button with progress indicator -->
+<Button inProgress>Loading</Button>
+
+<!-- Button with count -->
+<Button count={5}>Notifications</Button>
+
+<!-- Stateful button -->
+<Button variant="stateful" statefulState="unread">Stateful</Button>
 ```
+
+## Development
+
+### Setup
+
+```bash
+npm install
+```
+
+### Development Server
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Testing
+
+```bash
+# Run tests
+npm test
+
+# Run tests with UI
+npm run test:ui
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+### Storybook
+
+```bash
+# Start Storybook
+npm run storybook
+
+# Build Storybook
+npm run build-storybook
+```
+
+## License
+
+MIT

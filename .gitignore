@@ -1,12 +1,32 @@
-._*
-.DS_Store
-.DS_Store?
-.idea
-.Spotlight-V100
-.Trashes
+# Dependencies
 node_modules
-yarn.lock
-build
 
-dist/
-docs/
+# Build outputs
+dist
+.svelte-kit
+storybook-static
+
+# Testing
+coverage
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
