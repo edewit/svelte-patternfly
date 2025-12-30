@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { resolve } from 'path';
-import { copyFileSync } from 'fs';
+import { copyFileSync, existsSync } from 'fs';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
@@ -14,7 +14,10 @@ export default defineConfig({
     {
       name: 'copy-css',
       closeBundle() {
-        copyFileSync('src/styles.css', 'dist/styles.css');
+        // Only copy CSS when building the library (dist folder exists)
+        if (existsSync('dist')) {
+          copyFileSync('src/styles.css', 'dist/styles.css');
+        }
       }
     }
   ],

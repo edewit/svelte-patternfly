@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 
 /** @type { import('@storybook/svelte-vite').StorybookConfig } */
 const config = {
-  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx|svelte)'],
+  stories: ['../src/components/**/*.stories.@(js|jsx|ts|tsx|svelte)'],
   addons: ['@storybook/addon-links', '@storybook/addon-docs'],
 
   framework: {
@@ -31,7 +31,7 @@ const config = {
 
   previewHead: (head) => `
     ${head}
-    <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly@4/patternfly.css" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly@6/patternfly.css" crossorigin />
     <style>
       #root {
         padding: 3rem;
@@ -85,7 +85,7 @@ const config = {
         }
       };
     }
-    
+
     // Configure server to handle Storybook's internal files
     config.server = config.server || {};
     config.server.fs = config.server.fs || {};

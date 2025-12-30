@@ -39,6 +39,7 @@
   "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.40.0",
+    "@storybook/addon-docs": "^10.1.11",
     "@storybook/addon-links": "^10.0.7",
     "@storybook/svelte": "^10.0.7",
     "@storybook/svelte-vite": "^10.0.7",
