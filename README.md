@@ -73,14 +73,33 @@ The following PatternFly components are available:
 | Overflow Menu | [Docs](https://www.patternfly.org/components/menus/overflow-menu) |
 | Page | [Docs](https://www.patternfly.org/components/page) |
 | Pagination | [Docs](https://www.patternfly.org/components/pagination) |
+| Panel | [Docs](https://www.patternfly.org/components/panel) |
 | Popover | [Docs](https://www.patternfly.org/components/popover) |
+| Progress | [Docs](https://www.patternfly.org/components/progress) |
+| Progress Stepper | [Docs](https://www.patternfly.org/components/progress-stepper) |
 | Radio | [Docs](https://www.patternfly.org/components/forms/radio) |
+| Search Input | [Docs](https://www.patternfly.org/components/search-input) |
 | Select | [Docs](https://www.patternfly.org/components/menus/select) |
+| Sidebar | [Docs](https://www.patternfly.org/components/sidebar) |
 | Simple File Upload | [Docs](https://www.patternfly.org/components/file-upload) |
+| Simple List | [Docs](https://www.patternfly.org/components/simple-list) |
+| Skeleton | [Docs](https://www.patternfly.org/components/skeleton) |
+| Slider | [Docs](https://www.patternfly.org/components/slider) |
+| Spinner | [Docs](https://www.patternfly.org/components/spinner) |
+| Switch | [Docs](https://www.patternfly.org/components/switch) |
+| Table | [Docs](https://www.patternfly.org/components/table) |
+| Tabs | [Docs](https://www.patternfly.org/components/tabs) |
 | Text Area | [Docs](https://www.patternfly.org/components/forms/text-area) |
 | Text Input | [Docs](https://www.patternfly.org/components/forms/text-input) |
+| Text Input Group | [Docs](https://www.patternfly.org/components/text-input-group) |
 | Time Picker | [Docs](https://www.patternfly.org/components/date-and-time/time-picker) |
+| Timestamp | [Docs](https://www.patternfly.org/components/timestamp) |
+| Title | [Docs](https://www.patternfly.org/components/title) |
+| Toggle Group | [Docs](https://www.patternfly.org/components/toggle-group) |
 | Toolbar | [Docs](https://www.patternfly.org/components/toolbar) |
+| Tree View | [Docs](https://www.patternfly.org/components/tree-view) |
+| Truncate | [Docs](https://www.patternfly.org/components/truncate) |
+| Wizard | [Docs](https://www.patternfly.org/components/wizard) |
 
 ## Development
 
