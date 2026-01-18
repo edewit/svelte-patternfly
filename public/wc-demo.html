@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PatternFly Svelte Web Components Demo</title>
+    <!-- Use the built WC bundle stylesheet -->
+    <link rel="stylesheet" href="/dist/webcomponents/style.css" />
+    <style>
+      body { margin: 2rem; }
+      .demo-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+      .demo-card { padding: 1rem; border: 1px solid #e0e0e0; border-radius: 6px; }
+      .row { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+    </style>
+    <!-- Load the ESM build to register all custom elements -->
+    <script type="module">
+      import '/dist/webcomponents/webcomponents.js';
+    </script>
+  </head>
+  <body>
+    <h1>PatternFly Svelte Web Components</h1>
+
+    <div class="demo-grid">
+      <div class="demo-card">
+        <h2>Alert</h2>
+        <pf-alert variant="success" title="It worked!">
+          This alert is rendered via a Web Component.
+        </pf-alert>
+      </div>
+
+      <div class="demo-card">
+        <h2>Badge & Button</h2>
+        <div class="row">
+          <pf-badge>99+</pf-badge>
+          <pf-button variant="primary" onclick="alert('Clicked!')">Click me</pf-button>
+          <pf-button variant="secondary">Secondary</pf-button>
+        </div>
+      </div>
+
+      <div class="demo-card">
+        <h2>Spinner</h2>
+        <div class="row">
+          <pf-spinner></pf-spinner>
+          <pf-spinner variant="small"></pf-spinner>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:2rem;color:#666">Tip: this page loads <code>/dist/webcomponents/webcomponents.js</code> and <code>/dist/webcomponents/style.css</code> built by <code>npm run build:webcomponents</code>.</p>
+  </body>
+</html>

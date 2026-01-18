@@ -8,7 +8,55 @@ A Svelte component library implementing PatternFly design system components.
 npm install @patternfly/svelte @patternfly/patternfly
 ```
 
+After cloning this repository for development, generate the Web Component wrappers:
+
+```bash
+npm install
+npm run wc:gen
+```
+
 ## Usage
+
+### Web Components
+
+This library can be consumed as native Web Components without Svelte.
+
+- Build the web components bundle:
+
+```bash
+npm run wc:gen
+npm run build:webcomponents
+```
+
+- Use it in any HTML page (UMD):
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly@^6/patternfly.css" />
+<link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly@^6/patternfly-addons.css" />
+<script src="./node_modules/@patternfly/svelte/dist/webcomponents/webcomponents.umd.cjs"></script>
+
+<pf-alert variant="success" title="It worked!">
+  Hello from Web Components
+</pf-alert>
+
+<pf-badge>99+</pf-badge>
+<pf-button variant="primary">Click me</pf-button>
+```
+
+- Or import the ESM bundle:
+
+```html
+<script type="module">
+  import '@patternfly/svelte/dist/webcomponents/webcomponents.js';
+  // Custom elements are now registered (e.g., <pf-alert/>)
+</script>
+```
+
+All top-level components are exposed as `pf-<kebab-case-name>` custom elements (e.g., `pf-alert`, `pf-badge`, `pf-button`, `pf-table`).
+
+Notes:
+- The build logs may include Svelte warnings about `$props()` inference in some internal components when compiling as custom elements. These are non-fatal and do not affect usage of the generated Web Components.
+- If you add new components, run `npm run wc:gen` to scaffold their `.wc.svelte` wrappers and update `src/webcomponents.ts`.
 
 ```svelte
 <script>

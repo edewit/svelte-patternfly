@@ -6,6 +6,10 @@ dist
 .svelte-kit
 storybook-static
 
+# Generated web component wrappers (run `npm run wc:gen` to regenerate)
+src/webcomponents.ts
+**/*.wc.svelte
+
 # Testing
 coverage
 
